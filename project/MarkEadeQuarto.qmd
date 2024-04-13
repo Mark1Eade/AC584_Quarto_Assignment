@@ -43,7 +43,7 @@ merged_data <- full_join(world_map, indicator, by = c("region" = "country"))
 # Plotting the map
 p <- ggplot(data = merged_data) +
   aes(x = long, y = lat, group = group, fill = obs_value,
-      text = paste("Country: ", region, "<br>Percentage: ", obs_value,"%")) +
+      text = paste("<b>Country:</b>", region, "<br><b>Percentage:</b>", obs_value,"%")) +
   geom_polygon() +
   scale_fill_gradient(low = "#fff5f0", high = "#de2d26", na.value = "grey") +
   labs(
@@ -74,7 +74,7 @@ p
 
 # Create the bar chart without x-axis labels
 p <- ggplot(indicator, aes(x = country, y = obs_value, fill = country,
-                      text = paste("Country: ", country, "<br>Percentage: ", obs_value, "%"))) +
+                      text = paste("<b>Country:</b>", country, "<br><b>Percentage:</b>", obs_value, "%"))) +
   geom_bar(stat = "identity") +
   labs(x = "Country", y = "% of girls who are married or in a union", title = "Percentage of girls aged 15-19 years who are currently married or in a union") +
   theme_minimal() +
@@ -117,8 +117,9 @@ z_score_threshold <- 3
 
 gdp_data_filtered <- gdp_data[abs(gdp_data$gdp_z) < z_score_threshold & abs(gdp_data$life_exp_z) < z_score_threshold, ]
 
+# Making the chart
 p <- ggplot(gdp_data_filtered, aes(x = obs_value, y = GDP.per.capita..constant.2015.US..)) +
-  geom_point(aes(color = country, text = paste("Country: ", country, "<br>GDP per capita: $", GDP.per.capita..constant.2015.US.., "<br>Percentage", obs_value, "%"))) +  
+  geom_point(aes(color = country, text = paste("<b>Country:</b> ", country, "<br><b>GDP per capita:</b> $", GDP.per.capita..constant.2015.US.., "<br><b>Percentage:</b>", obs_value, "%"))) +  
   geom_smooth(method = "lm", se = FALSE, color = "blue", linetype = "dashed", size = 1) +
   labs(
     x = "Percentage of girls aged 15-19 years who are currently married or in a union", 
@@ -131,11 +132,12 @@ p <- ggplot(gdp_data_filtered, aes(x = obs_value, y = GDP.per.capita..constant.2
   guides(color = FALSE) +
   theme_bw()
 
+# Turning it into plotly
 p <- ggplotly(p, tooltip = c("text"))
 
 p <- p %>% layout(
   title = list(text = "Relationship between the percentage of girls aged 15-19 years who are currently married or in a union and GDP per capita", 
-               font = list(size = 11.8)),  
+               font = list(size = 14)),  
   autosize = TRUE)
 
 p
@@ -160,7 +162,7 @@ z_score_threshold <- 3
 gdp_data_filtered <- gdp_data[abs(gdp_data$gdp_z) < z_score_threshold & abs(gdp_data$life_exp_z) < z_score_threshold, ]
 p <- ggplot(gdp_data_filtered, aes(x = `GDP.per.capita..constant.2015.US..`, y = `Life.expectancy.at.birth..total..years.`)) +
   geom_point(aes(color = country, 
-                 text = paste("Country: ", country, "<br>GDP per capita: $", GDP.per.capita..constant.2015.US.., "<br>Life Expectancy", Life.expectancy.at.birth..total..years., "years"))) +
+                 text = paste("<b>Country:</b> ", country, "<br><b>GDP per capita:</b> $", GDP.per.capita..constant.2015.US.., "<br><b>Life Expectancy:</b>", Life.expectancy.at.birth..total..years., "years"))) +
   geom_smooth(method = "lm", se = FALSE, color = "blue", linetype = "dashed", size = 1) +
   labs(
     x = "GDP per capita (constant 2015 US$)", 
@@ -224,7 +226,7 @@ In **Figure 6**, we can see that there is a negative correlation between the two
 ```{r, fig.width=10, fig.height=6}
 p <- ggplot(gdp_data, aes(x = `obs_value`, y = `Life.expectancy.at.birth..total..years.`)) +
   geom_point(aes(color = country, 
-                 text = paste("Country: ", country, "<br>Life Expectancy", Life.expectancy.at.birth..total..years., "years", "<br>Percentage", obs_value, "%"))) +
+                 text = paste("<b>Country:</b> ", country, "<br><b>Life Expectancy:</b>", Life.expectancy.at.birth..total..years., "years", "<br><b>Percentage:</b>", obs_value, "%"))) +
   geom_smooth(method = "lm", se = FALSE, color = "blue", linetype = "dashed", size = 1) +
   labs(
     x = "Percentage of girls aged 15-19 years who are currently married or in a union", 
