@@ -1,0 +1,143 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Afghanistan,AF,AFG,4,Percentage of girls aged 15-19 years who are currently married or in union,2017,16.3,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Albania,AL,ALB,8,Percentage of girls aged 15-19 years who are currently married or in union,2018,6.687,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Algeria,DZ,DZA,12,Percentage of girls aged 15-19 years who are currently married or in union,2019,3.303,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Angola,AO,AGO,24,Percentage of girls aged 15-19 years who are currently married or in union,2016,18.2,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Argentina,AR,ARG,32,Percentage of girls aged 15-19 years who are currently married or in union,2020,7.701,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Armenia,AM,ARM,51,Percentage of girls aged 15-19 years who are currently married or in union,2016,4.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Azerbaijan,AZ,AZE,31,Percentage of girls aged 15-19 years who are currently married or in union,2011,8.9,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Bangladesh,BD,BGD,50,Percentage of girls aged 15-19 years who are currently married or in union,2019,32.859,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Barbados,BB,BRB,52,Percentage of girls aged 15-19 years who are currently married or in union,2012,1.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Belarus,BY,BLR,112,Percentage of girls aged 15-19 years who are currently married or in union,2019,3.509,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Belize,BZ,BLZ,84,Percentage of girls aged 15-19 years who are currently married or in union,2016,20.8,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Benin,BJ,BEN,204,Percentage of girls aged 15-19 years who are currently married or in union,2018,18.451,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Bhutan,BT,BTN,64,Percentage of girls aged 15-19 years who are currently married or in union,2010,15.2,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+"Bolivia, Plurinational State of",BO,BOL,68,Percentage of girls aged 15-19 years who are currently married or in union,2016,10.697,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Bolivia,BO,BOL,68,Percentage of girls aged 15-19 years who are currently married or in union,2016,10.697,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Bosnia and Herzegovina,BA,BIH,70,Percentage of girls aged 15-19 years who are currently married or in union,2013,10.184,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Botswana,BW,BWA,72,Percentage of girls aged 15-19 years who are currently married or in union,1988,5.8,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Brazil,BR,BRA,76,Percentage of girls aged 15-19 years who are currently married or in union,2015,12.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Bulgaria,BG,BGR,100,Percentage of girls aged 15-19 years who are currently married or in union,2013,1.5,Total,,%,Reported,Free,End of fieldwork,16 to 19 years old
+Burkina Faso,BF,BFA,854,Percentage of girls aged 15-19 years who are currently married or in union,2015,23.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Burundi,BI,BDI,108,Percentage of girls aged 15-19 years who are currently married or in union,2017,5.872,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Cape Verde,CV,CPV,132,Percentage of girls aged 15-19 years who are currently married or in union,2018,6.7,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Cambodia,KH,KHM,116,Percentage of girls aged 15-19 years who are currently married or in union,2022,11.239,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Cameroon,CM,CMR,120,Percentage of girls aged 15-19 years who are currently married or in union,2018,18.613,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Central African Republic,CF,CAF,140,Percentage of girls aged 15-19 years who are currently married or in union,2019,36.134,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Chad,TD,TCD,148,Percentage of girls aged 15-19 years who are currently married or in union,2019,24.556,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Chile,CL,CHL,152,Percentage of girls aged 15-19 years who are currently married or in union,2017,1.349,Total,,%,Reanalysed,Free,End of fieldwork,15 to 19 years old
+China,CN,CHN,156,Percentage of girls aged 15-19 years who are currently married or in union,2020,1.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Colombia,CO,COL,170,Percentage of girls aged 15-19 years who are currently married or in union,2015,13.3,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Comoros,KM,COM,174,Percentage of girls aged 15-19 years who are currently married or in union,2012,16.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Republic of Congo,CG,COG,178,Percentage of girls aged 15-19 years who are currently married or in union,2015,16.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Costa Rica,CR,CRI,188,Percentage of girls aged 15-19 years who are currently married or in union,2018,9.529,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Cuba,CU,CUB,192,Percentage of girls aged 15-19 years who are currently married or in union,2019,12.362,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Côte d'Ivoire,CI,CIV,384,Percentage of girls aged 15-19 years who are currently married or in union,2016,18.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Ivory Coast,CI,CIV,384,Percentage of girls aged 15-19 years who are currently married or in union,2016,18.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Democratic Republic of the Congo,CD,COD,180,Percentage of girls aged 15-19 years who are currently married or in union,2018,18.006,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Djibouti,DJ,DJI,262,Percentage of girls aged 15-19 years who are currently married or in union,2012,2.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Dominican Republic,DO,DOM,214,Percentage of girls aged 15-19 years who are currently married or in union,2019,17.388,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Ecuador,EC,ECU,218,Percentage of girls aged 15-19 years who are currently married or in union,2012,13.7,Total,,%,Reanalysed,Free,End of fieldwork,15 to 19 years old
+Egypt,EG,EGY,818,Percentage of girls aged 15-19 years who are currently married or in union,2014,14.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+El Salvador,SV,SLV,222,Percentage of girls aged 15-19 years who are currently married or in union,2021,10.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Equatorial Guinea,GQ,GNQ,226,Percentage of girls aged 15-19 years who are currently married or in union,2011,22,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Eritrea,ER,ERI,232,Percentage of girls aged 15-19 years who are currently married or in union,2010,17.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Swaziland,SZ,SWZ,748,Percentage of girls aged 15-19 years who are currently married or in union,2014,4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Ethiopia,ET,ETH,231,Percentage of girls aged 15-19 years who are currently married or in union,2019,21.5,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Fiji,FJ,FJI,242,Percentage of girls aged 15-19 years who are currently married or in union,2021,3.9,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Gabon,GA,GAB,266,Percentage of girls aged 15-19 years who are currently married or in union,2012,13.5,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Gambia,GM,GMB,270,Percentage of girls aged 15-19 years who are currently married or in union,2020,18.881,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Georgia,GE,GEO,268,Percentage of girls aged 15-19 years who are currently married or in union,2018,11.2,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Ghana,GH,GHA,288,Percentage of girls aged 15-19 years who are currently married or in union,2018,7.328,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Guatemala,GT,GTM,320,Percentage of girls aged 15-19 years who are currently married or in union,2015,19.8,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Guinea,GN,GIN,324,Percentage of girls aged 15-19 years who are currently married or in union,2018,28.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Guinea-Bissau,GW,GNB,624,Percentage of girls aged 15-19 years who are currently married or in union,2019,15.768,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Guyana,GY,GUY,328,Percentage of girls aged 15-19 years who are currently married or in union,2020,10.377,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Haiti,HT,HTI,332,Percentage of girls aged 15-19 years who are currently married or in union,2017,6.89,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Honduras,HN,HND,340,Percentage of girls aged 15-19 years who are currently married or in union,2019,21.084,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+India,IN,IND,356,Percentage of girls aged 15-19 years who are currently married or in union,2021,12.573,Total,,%,Reanalysed,Free,End of fieldwork,15 to 19 years old
+Indonesia,ID,IDN,360,Percentage of girls aged 15-19 years who are currently married or in union,2017,9.3,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Iran,IR,IRN,364,Percentage of girls aged 15-19 years who are currently married or in union,2010,21.45,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Iraq,IQ,IRQ,368,Percentage of girls aged 15-19 years who are currently married or in union,2018,18.38,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Jamaica,JM,JAM,388,Percentage of girls aged 15-19 years who are currently married or in union,2011,3.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Jordan,JO,JOR,400,Percentage of girls aged 15-19 years who are currently married or in union,2018,7.566,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Kazakhstan,KZ,KAZ,398,Percentage of girls aged 15-19 years who are currently married or in union,2015,6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Kenya,KE,KEN,404,Percentage of girls aged 15-19 years who are currently married or in union,2014,12,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Kiribati,KI,KIR,296,Percentage of girls aged 15-19 years who are currently married or in union,2019,10.685,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Kyrgyzstan,KG,KGZ,417,Percentage of girls aged 15-19 years who are currently married or in union,2018,9.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Lao People's Democratic Republic,LA,LAO,418,Percentage of girls aged 15-19 years who are currently married or in union,2017,23.468,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Lebanon,LB,LBN,422,Percentage of girls aged 15-19 years who are currently married or in union,2016,4.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Lesotho,LS,LSO,426,Percentage of girls aged 15-19 years who are currently married or in union,2018,13.9,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Liberia,LR,LBR,430,Percentage of girls aged 15-19 years who are currently married or in union,2020,12.334,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Madagascar,MG,MDG,450,Percentage of girls aged 15-19 years who are currently married or in union,2021,24.022,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Malawi,MW,MWI,454,Percentage of girls aged 15-19 years who are currently married or in union,2020,20.888,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Malaysia,MY,MYS,458,Percentage of girls aged 15-19 years who are currently married or in union,2010,6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Maldives,MV,MDV,462,Percentage of girls aged 15-19 years who are currently married or in union,2017,3.814,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Mali,ML,MLI,466,Percentage of girls aged 15-19 years who are currently married or in union,2018,42.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Marshall Islands,MH,MHL,584,Percentage of girls aged 15-19 years who are currently married or in union,2007,21.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Mauritania,MR,MRT,478,Percentage of girls aged 15-19 years who are currently married or in union,2021,26.934,Total,,%,Reanalysed,Free,End of fieldwork,15 to 19 years old
+Mexico,MX,MEX,484,Percentage of girls aged 15-19 years who are currently married or in union,2020,12.4,Total,,%,Reanalysed,Free,End of fieldwork,15 to 19 years old
+Mongolia,MN,MNG,496,Percentage of girls aged 15-19 years who are currently married or in union,2018,3.9,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Montenegro,ME,MNE,499,Percentage of girls aged 15-19 years who are currently married or in union,2018,1.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Morocco,MA,MAR,504,Percentage of girls aged 15-19 years who are currently married or in union,2018,8.8,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Mozambique,MZ,MOZ,508,Percentage of girls aged 15-19 years who are currently married or in union,2015,43.093,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Myanmar,MM,MMR,104,Percentage of girls aged 15-19 years who are currently married or in union,2016,12.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Burma,MM,MMR,104,Percentage of girls aged 15-19 years who are currently married or in union,2016,12.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Namibia,,NAM,516,Percentage of girls aged 15-19 years who are currently married or in union,2013,5.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Nauru,NR,NRU,520,Percentage of girls aged 15-19 years who are currently married or in union,2007,18.3,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Nepal,NP,NPL,524,Percentage of girls aged 15-19 years who are currently married or in union,2019,19.283,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Nicaragua,NI,NIC,558,Percentage of girls aged 15-19 years who are currently married or in union,2012,22.33,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Niger,NE,NER,562,Percentage of girls aged 15-19 years who are currently married or in union,2015,63.9,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Nigeria,NG,NGA,566,Percentage of girls aged 15-19 years who are currently married or in union,2021,12.167,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+North Macedonia,MK,MKD,807,Percentage of girls aged 15-19 years who are currently married or in union,2019,5.593,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Oman,OM,OMN,512,Percentage of girls aged 15-19 years who are currently married or in union,2014,3.3,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Pakistan,PK,PAK,586,Percentage of girls aged 15-19 years who are currently married or in union,2018,13.472,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Panama,PA,PAN,591,Percentage of girls aged 15-19 years who are currently married or in union,2013,14.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Papua New Guinea,PG,PNG,598,Percentage of girls aged 15-19 years who are currently married or in union,2018,13.7,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Paraguay,PY,PRY,600,Percentage of girls aged 15-19 years who are currently married or in union,2016,16.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Peru,PE,PER,604,Percentage of girls aged 15-19 years who are currently married or in union,2018,9.478,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Philippines,PH,PHL,608,Percentage of girls aged 15-19 years who are currently married or in union,2017,8.548,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Qatar,QA,QAT,634,Percentage of girls aged 15-19 years who are currently married or in union,2012,4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Moldova,MD,MDA,498,Percentage of girls aged 15-19 years who are currently married or in union,2012,9.9,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Russian Federation,RU,RUS,643,Percentage of girls aged 15-19 years who are currently married or in union,2017,7.328,Total,,%,Reanalysed,Free,End of fieldwork,18 to 19 years old
+Russia,RU,RUS,643,Percentage of girls aged 15-19 years who are currently married or in union,2017,7.328,Total,,%,Reanalysed,Free,End of fieldwork,18 to 19 years old
+Rwanda,RW,RWA,646,Percentage of girls aged 15-19 years who are currently married or in union,2020,7.625,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Saint Lucia,LC,LCA,662,Percentage of girls aged 15-19 years who are currently married or in union,2012,4.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Samoa,WS,WSM,882,Percentage of girls aged 15-19 years who are currently married or in union,2020,7.836,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Sao Tome and Principe,ST,STP,678,Percentage of girls aged 15-19 years who are currently married or in union,2019,11.924,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Senegal,SN,SEN,686,Percentage of girls aged 15-19 years who are currently married or in union,2019,20.758,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Serbia,RS,SRB,688,Percentage of girls aged 15-19 years who are currently married or in union,2019,3.81,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Sierra Leone,SL,SLE,694,Percentage of girls aged 15-19 years who are currently married or in union,2019,13.932,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Solomon Islands,SB,SLB,90,Percentage of girls aged 15-19 years who are currently married or in union,2015,11.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Somalia,SO,SOM,706,Percentage of girls aged 15-19 years who are currently married or in union,2020,18,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+South Africa,ZA,ZAF,710,Percentage of girls aged 15-19 years who are currently married or in union,2016,3.089,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+South Sudan,SS,SSD,728,Percentage of girls aged 15-19 years who are currently married or in union,2010,40.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Sri Lanka,LK,LKA,144,Percentage of girls aged 15-19 years who are currently married or in union,2016,6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Palestine,PS,PSE,275,Percentage of girls aged 15-19 years who are currently married or in union,2020,7.939,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Sudan,SD,SDN,736,Percentage of girls aged 15-19 years who are currently married or in union,2014,21.2,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Suriname,SR,SUR,740,Percentage of girls aged 15-19 years who are currently married or in union,2018,34.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Syria,SY,SYR,760,Percentage of girls aged 15-19 years who are currently married or in union,2006,9.7,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Tajikistan,TJ,TJK,762,Percentage of girls aged 15-19 years who are currently married or in union,2017,12.582,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Thailand,TH,THA,764,Percentage of girls aged 15-19 years who are currently married or in union,2019,9.643,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Timor-Leste,TL,TLS,626,Percentage of girls aged 15-19 years who are currently married or in union,2016,8.202,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Togo,TG,TGO,768,Percentage of girls aged 15-19 years who are currently married or in union,2017,11.2,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Tonga,TO,TON,776,Percentage of girls aged 15-19 years who are currently married or in union,2019,3.419,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Trinidad and Tobago,TT,TTO,780,Percentage of girls aged 15-19 years who are currently married or in union,2011,4.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Tunisia,TN,TUN,788,Percentage of girls aged 15-19 years who are currently married or in union,2018,0.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Turkmenistan,TM,TKM,795,Percentage of girls aged 15-19 years who are currently married or in union,2019,4.831,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Turks and Caicos Islands,TC,TCA,796,Percentage of girls aged 15-19 years who are currently married or in union,2020,12.112,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Tuvalu,TV,TUV,798,Percentage of girls aged 15-19 years who are currently married or in union,2020,9.31,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Turkey,TR,TUR,792,Percentage of girls aged 15-19 years who are currently married or in union,2018,4.8,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Uganda,UG,UGA,800,Percentage of girls aged 15-19 years who are currently married or in union,2016,19.929,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Ukraine,UA,UKR,804,Percentage of girls aged 15-19 years who are currently married or in union,2012,6.5,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Tanzania,TZ,TZA,834,Percentage of girls aged 15-19 years who are currently married or in union,2016,23,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Uruguay,UY,URY,858,Percentage of girls aged 15-19 years who are currently married or in union,2019,7.06,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Uzbekistan,UZ,UZB,860,Percentage of girls aged 15-19 years who are currently married or in union,2022,11.949,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Vanuatu,VU,VUT,548,Percentage of girls aged 15-19 years who are currently married or in union,2013,11.4,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+"Venezuela, Bolivarian Republic of",VE,VEN,862,Percentage of girls aged 15-19 years who are currently married or in union,2011,15.7,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Venezuela,VE,VEN,862,Percentage of girls aged 15-19 years who are currently married or in union,2011,15.7,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Viet Nam,VN,VNM,704,Percentage of girls aged 15-19 years who are currently married or in union,2021,7.381,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Vietnam,VN,VNM,704,Percentage of girls aged 15-19 years who are currently married or in union,2021,7.381,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Yemen,YE,YEM,887,Percentage of girls aged 15-19 years who are currently married or in union,2013,17.1,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Zambia,ZM,ZMB,894,Percentage of girls aged 15-19 years who are currently married or in union,2018,14.6,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old
+Zimbabwe,ZW,ZWE,716,Percentage of girls aged 15-19 years who are currently married or in union,2019,21.2,Total,,%,Reported,Free,End of fieldwork,15 to 19 years old

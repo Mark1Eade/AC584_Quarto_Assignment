@@ -1,0 +1,258 @@
+---
+title: "End Child Marriage"
+subtitle: "A Worldwide Perspective"
+author: "Mark Eade"
+date: "04/10/2024"
+format: html
+page-layout: full
+toc: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# libraries
+library(gapminder)
+library(tidyverse)
+library(ggplot2)
+library(maps)
+library(dplyr)
+library(plotly)
+
+# data
+indicator <- read.csv("/cloud/project/unicef_indicator_1.csv")
+metadata <- read.csv("/cloud/project/unicef_metadata.csv")
+```
+
+# Introduction
+
+This Quarto document focuses on the major issue of **female child marriage**. This is a worldwide issue, with every inhabited continent containing at least one country which are reported to have a **significant number of girls between the ages of 15 and 19 currently married or in a union.**
+
+```{r, fig.width=10, fig.height=6}
+
+world_map <- map_data("world")
+
+# Merging map data and selected data together
+merged_data <- full_join(world_map, indicator, by = c("region" = "country"))
+
+# Plotting the map
+p <- ggplot(data = merged_data) +
+  aes(x = long, y = lat, group = group, fill = obs_value,
+      text = paste("Country: ", region, "<br>Percentage: ", obs_value,"%")) +
+  geom_polygon() +
+  scale_fill_gradient(low = "#fff5f0", high = "#de2d26", na.value = "grey") +
+  labs(
+    title = "Percentage of girls aged 15-19 years who are currently married or in a union around the world",
+    subtitle = "Countries in grey do not have data relating to child marriages",
+    caption = "Figure 1. Source: UNICEF",
+    fill = "Percentage"
+  ) + 
+  theme_void()
+
+# Convert ggplot object to plotly object
+p <- ggplotly(p, tooltip = "text")
+
+# Modify layout
+p <- p %>% layout(
+  title = list(text = "Percentage of girls aged 15-19 years who are currently married or in a union around the world", 
+               x = 0.5,
+               font = list(size = 14)),
+  autosize = TRUE)
+
+p
+
+```  
+
+**Figure 1** represents a visualisation of the percentage of girls aged 15-19 years who are currently married or in a union in various countries across the world in their respective reporting periods (between 1988 and 2022).
+
+```{r, fig.width=10, fig.height=6}
+
+# Create the bar chart without x-axis labels
+p <- ggplot(indicator, aes(x = country, y = obs_value, fill = country,
+                      text = paste("Country: ", country, "<br>Percentage: ", obs_value, "%"))) +
+  geom_bar(stat = "identity") +
+  labs(x = "Country", y = "% of girls who are married or in a union", title = "Percentage of girls aged 15-19 years who are currently married or in a union") +
+  theme_minimal() +
+  guides(fill = FALSE) +
+  theme(axis.text.x = element_blank(),  # Remove x-axis labels
+        axis.title.x = element_blank())  # Remove x-axis title
+
+p <- ggplotly(p, tooltip = c("text"))
+
+p <- p %>% layout(
+  title = list(text = "Percentage of girls aged 15-19 years who are currently married or in a union ", 
+               x = 0.5,  # Center the title
+               font = list(size = 14)),  # Adjust the font size of the title
+  yaxis = list(automargin = TRUE)  # Autosize the y-axis label
+)
+
+p
+```
+**Figure 2** shows similar findings to **Figure 1**, except this time the statistics are presented in the form of a bar chart.
+
+*Niger* currently reports the **highest rate** of girls aged 15-19 years who are currently married or in union at ***63.90%***, while *Tunisia* reports the **lowest** (of all countries investigated), at just ***0.60%.***
+
+This shows that child marriage is more prevalent and a bigger issue in poorer/developing countries, of which many are in Africa, Asia, and South America.
+
+# GDP per capita and its relationship with child marriage rates and life expectancy
+## Child marriage rates
+
+One of the major contributing factors towards child marriage is **extreme poverty**. For example, in *Niger*, where the rate of child marriage is reported to be *63.90%*, ***over half the population lives on less than $2 a day***, and the average woman gives birth to **seven or eight children**. Therefore, for struggling families, marrying off their female children is a simple solution to their struggles, as they have fewer mouths to feed and usually receive a dowry from the groom's family.
+
+In **Figure 3**, we can see the relationship between the percentage of girls aged 15-19 years who are currently married or in a union and the GDP per capita (in the year the country was reported on). No country has a GDP per capita of at least $20k, and the vast majority are less than $10k, and it can be seen that **as GDP per capita drops, the prevalence of child marriage increases in the country**.
+
+```{r, fig.width=10, fig.height=6}
+gdp_data <- merge(metadata, indicator, by.x = c("country", "year"), by.y = c("country", "time_period"))
+
+# Filtering out outliers from data
+gdp_data$gdp_z <-scale(gdp_data$`GDP.per.capita..constant.2015.US..`)
+gdp_data$life_exp_z <- scale(gdp_data$`Life.expectancy.at.birth..total..years.`)
+
+z_score_threshold <- 3
+
+gdp_data_filtered <- gdp_data[abs(gdp_data$gdp_z) < z_score_threshold & abs(gdp_data$life_exp_z) < z_score_threshold, ]
+
+p <- ggplot(gdp_data_filtered, aes(x = obs_value, y = GDP.per.capita..constant.2015.US..)) +
+  geom_point(aes(color = country, text = paste("Country: ", country, "<br>GDP per capita: $", GDP.per.capita..constant.2015.US.., "<br>Percentage", obs_value, "%"))) +  
+  geom_smooth(method = "lm", se = FALSE, color = "blue", linetype = "dashed", size = 1) +
+  labs(
+    x = "Percentage of girls aged 15-19 years who are currently married or in a union", 
+    y = "GDP per capita (constant 2015 US$)", 
+    title = "Relationship between the percentage of girls aged 15-19 years who are currently married or in a union and GDP per capita",
+    subtitle = "Qatar filtered out due to it being an outlier",
+    caption = "Figure 3. Source: UNICEF"
+  ) +
+  ylim(0, NA) +
+  guides(color = FALSE) +
+  theme_bw()
+
+p <- ggplotly(p, tooltip = c("text"))
+
+p <- p %>% layout(
+  title = list(text = "Relationship between the percentage of girls aged 15-19 years who are currently married or in a union and GDP per capita", 
+               font = list(size = 11.8)),  
+  autosize = TRUE)
+
+p
+```
+
+## Life Expectancy
+
+**Figure 4** shows that there is a **positive correlation** between life expectancy at birth and GDP per capita for all the countries investigated.
+
+Countries with a **higher GDP per capita**, such as *Oman*, *Chile* or *Uruguay* all demonstrate a **higher life expectancy**, and also have **lower rates of child marriage**, as seen above.
+
+On the other hand, countries with a **lower GDP per capita**, like *Somalia*, *Chad* and the *Central African Republic*, all show **lower life expectancy**, which might explain why their **rates of child marriage** are much higher than other countries, as they live shorter lives meaning there is less time for them to marry and have children.
+```{r, fig.width=10, fig.height=6}
+gdp_data <- merge(metadata, indicator, by.x = c("country", "year"), by.y = c("country", "time_period"))
+
+# Filtering out outliers from data
+gdp_data$gdp_z <-scale(gdp_data$`GDP.per.capita..constant.2015.US..`)
+gdp_data$life_exp_z <- scale(gdp_data$`Life.expectancy.at.birth..total..years.`)
+
+z_score_threshold <- 3
+
+gdp_data_filtered <- gdp_data[abs(gdp_data$gdp_z) < z_score_threshold & abs(gdp_data$life_exp_z) < z_score_threshold, ]
+p <- ggplot(gdp_data_filtered, aes(x = `GDP.per.capita..constant.2015.US..`, y = `Life.expectancy.at.birth..total..years.`)) +
+  geom_point(aes(color = country, 
+                 text = paste("Country: ", country, "<br>GDP per capita: $", GDP.per.capita..constant.2015.US.., "<br>Life Expectancy", Life.expectancy.at.birth..total..years., "years"))) +
+  geom_smooth(method = "lm", se = FALSE, color = "blue", linetype = "dashed", size = 1) +
+  labs(
+    x = "GDP per capita (constant 2015 US$)", 
+    y = "Life expectancy at birth (years)", 
+    title = "Relationship between life expectancy at birth and GDP per capita",
+    subtitle = "Qatar filtered out due to it being an outlier",
+    caption = "Figure 4. Source: UNICEF"
+    ) +
+  guides(color = FALSE) +
+  theme_bw()
+
+p <- ggplotly(p, tooltip = c("text"))
+
+p <- p %>% layout(
+  title = list(text = "Relationship between life expectancy at birth and GDP per capita", 
+               font = list(size = 14)),  
+  autosize = TRUE)
+
+p
+```
+
+# Life expectancy at birth and its relationship with child marriage rates
+
+In this section we have two figures, a time series of the life expectancy at birth for six selected countries, and a scatterplot showing the relationship between the percentage of girls aged 15-19 years who are currently married or in a union and life expectancy at birth.
+
+## Time Series
+
+In Figure 5, six countries were chosen: the three with the lowest percentage of girls aged 15-19 years who are currently married or in a union (China, Montenegro, and Tunisia), and the three with the highest (Mozambique, Mali and Niger), and their life expectancies over the last 60 years has been plotted. As we can see, the countries with the lower rates of child marriage have consistently higher life expectancies over the selected period of time.
+
+```{r, fig.width=10, fig.height=6}
+countries <- c("China", "Tunisia", "Montenegro", "Mozambique", "Mali", "Niger")
+filtered_data <- metadata %>%
+  filter(country %in% countries)
+
+p <- ggplot(filtered_data, aes(year, Life.expectancy.at.birth..total..years., color = country)) +
+  geom_line() +
+  labs(
+    x = "Year", 
+    y = "Life expectancy at birth (years)", 
+    title = "Time Series of the evolution of life expectancy at birth of selected countries between 1960 and 2021",
+    subtitle = "China, Tunisia, Montenegro, Mozambique, Mali, and Niger",
+    caption = "Figure 4. Source: UNICEF",
+    fill = "Country"
+    ) +
+  theme_bw()
+
+p <- ggplotly(p, tooltip = c("text"))
+
+p <- p %>% layout(
+  title = list(text = "Time Series of the evolution of life expectancy at birth of selected countries between 1960 and 2021", 
+               font = list(size = 14)),  
+  autosize = TRUE)
+
+p
+```
+
+## Child marriage rates
+
+In **Figure 6**, we can see that there is a negative correlation between the two variables: as the **life expectancy at birth increases**, the **percentage of girls aged 15-19 years who are currently married or in a union in the country decreases**, and vice versa.
+
+```{r, fig.width=10, fig.height=6}
+p <- ggplot(gdp_data, aes(x = `obs_value`, y = `Life.expectancy.at.birth..total..years.`)) +
+  geom_point(aes(color = country, 
+                 text = paste("Country: ", country, "<br>Life Expectancy", Life.expectancy.at.birth..total..years., "years", "<br>Percentage", obs_value, "%"))) +
+  geom_smooth(method = "lm", se = FALSE, color = "blue", linetype = "dashed", size = 1) +
+  labs(
+    x = "Percentage of girls aged 15-19 years who are currently married or in a union", 
+    y = "Life expectancy at birth (years)", 
+    title = "Relationship between the percentage of girls aged 15-19 years who are currently married or in a union and life expectancy at birth",
+    caption = "Figure 5. Source: UNICEF"
+    ) +
+  guides(color = FALSE) +
+  theme_bw()
+
+p <- ggplotly(p, tooltip = c("text"))
+
+p <- p %>% layout(
+  title = list(text = "Relationship between the percentage of girls who are currently married or in a union and life expectancy at birth", 
+               font = list(size = 14)),  
+  autosize = TRUE)
+
+p
+```
+
+As we can see from both figures, there is a **clear link between a higher life expectancy at birth and a lower percentage of girls married or in a union**. One reason for this could be due to the fact that underage pregnancy has a higher risk of killing the mother when giving birth, therefore countries with a higher percentage of girls married are likely to have a higher number of younger women/girls dying during childbirth, reducing the average life expectancy.
+
+# Conclusion
+
+To conclude, the amount of children currently married is a major issue and is not contained to one singular area, rather it is spread across the world, but it is especially prevalent in poorer regions. 
+
+
+We can see that there are strong links between a country's poverty level and life expectancy and the amount of children currently married or in a union.
+
+
+In terms of what can be done in the future to end this issue, some suggestions include lobbying governments across the world to bring in **legislation aimed at raising the minimum age for marriage to 18 years old**. As well as that, **punishing those who facilitate these child marriages** should be introduced to deter the practice from occurring further.
